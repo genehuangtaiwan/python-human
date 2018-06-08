@@ -1,12 +1,15 @@
-from human import Human
+from human import *
 
 
 def main():
     a = Human()
-    b = Human()
+    b = Female('El')
     c = a
+    c.sex = Sex.MALE
+    b.sex = Sex.MALE
     print(a)
     print(b)
+    print(c)
     if a == c:
         print('a and c are same person')
     else:
